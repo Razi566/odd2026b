@@ -1,6 +1,6 @@
-# odd2026b
+![alt text](image-1.png)
 Estructura de datos 2026
-#   Estructura y Organizacion de Datos
+#  📄 Estructura y Organizacion de Datos
 __Repositorio__ de la materia Estructura y Organizacion de Datos, Semestre 2026B
 
 ## Competencias a desarrollar
