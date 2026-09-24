@@ -6,28 +6,38 @@ del 1 al 100
 """
 # Importamos biblioteca time
 import time
-
-#Creando una marca de tiempo
-timestamp_01 = time.time()
-
-#Programa que calcula la suma de los "n" num 
-#naturales
-n=100
-total_Sum=0
-
-#Ciclo for
-for number in range(1,n+1):
+def Sum_of_n(n):
+  total_Sum=0
+  #Sumando los n num
+  #Ciclo for
+  for number in range(1,n+1):
     total_Sum = total_Sum + number
-    #1) sum <- 0 +´1
-    #Sum = 1
-    #2) Sum <- 1 + 2
-    #Sum = 3
-    #...
-    #100) Sum <- Sum_(-1) + 100
-print(f"La suma de 1 hasta {n} es: {total_Sum}")
-#f = Formato
+  #Retornando el total de la suma
+  return total_Sum
 
-timestamp_02 = time.time()
+#Variable para guardar
+#El data set
+dataset = [] #[(n,time,sum),(n,time,sum)]
 
-#Impresion del tiempo de ejecucion
-print(f"Tiempo de ejecucion:{((timestamp_02 - timestamp_01)*1e6):.2f} μs")
+#Generando el contenido del Dataset
+for repetition in range(1,11):
+  #⌛Tomo el tiempo 1
+  #Creando una marca de tiempo
+  timestamp_01 = time.time()
+  #Sumo los n Numeros
+  n = repetition*500
+  #Guardar el resultado en memoria
+  result = Sum_of_n(n)
+  #Tomando el tiempo final
+  timestamp_02 = time.time()
+
+  #Calculando el tiempo final
+  elapsed_time = round((timestamp_02 - timestamp_01)*1e6,2)
+
+  #Agregar la tripleta de los datos al data set
+  dataset.append( (n,elapsed_time,result) )
+
+#Imprimir el dataset
+for tup in dataset:
+    print(tup)
+
