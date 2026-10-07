@@ -12,4 +12,4 @@ def random_function(students):
     return total # O(1)
 print(random_function(student_list_01))
 # Calcular O(?)
-#O(3n + 5) = O(n)
+#O(3n + 5) = O(3n) = O(n)
