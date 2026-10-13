@@ -8,7 +8,7 @@ import array as arr
 # 3: Num decimal
 # 4: Num decimal doble
 # 5: Caracteres unicode
-my_array = arr.array('i',[10,22,300,6,10,800,64,67,8,90,100])
+my_array = arr.array('i',[10,22,300,6,10,800,200,67,8,90,100])
 #Interacion automatica
 #for num in my_array:
     #print(num)
@@ -23,8 +23,20 @@ my_array = arr.array('i',[10,22,300,6,10,800,64,67,8,90,100])
 #print(len(my_array))
 
 #Interacion por indices
-for i in range(len(my_array)):
-    if my_array[i] % 2 == 0:
-        print(f"Elemento Num {i+1}: {my_array[i]}")
-    
+#for i in range(len(my_array)):
+    #if my_array[i] % 2 == 0:
+        #print(f"Elemento Num {i+1}: {my_array[i]}")
+
+#Busqueda de un elemento 
+num_to_search = 200
+
+#Modificando un valor
+#Backet notation
+my_array[6] = 200
+try:
+  print(f"Localizado {num_to_search}: {my_array.index[num_to_search]}")
+except:
+  print("Num NO encontrado ❌")
+
+#Busqueda por limites
 
