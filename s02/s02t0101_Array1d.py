@@ -34,9 +34,14 @@ num_to_search = 200
 #Backet notation
 my_array[6] = 200
 try:
-  print(f"Localizado {num_to_search}: {my_array.index[num_to_search]}")
+  print(f"Localizado 200: {my_array.index(num_to_search)}")
 except:
   print("Num NO encontrado ❌")
 
 #Busqueda por limites
+#Asignando valor en un indice que no existe
+try: 
+ my_array[100] = 3
+except:
+  print("El indice NO existe babas ❌")
 
