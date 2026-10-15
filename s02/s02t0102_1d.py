@@ -15,7 +15,7 @@ Number_to_search = 100
 couter = 0
 print(f"Se busca {Number_to_search} en el arreglo")
 for integrer in my_array:
-        if integer == Number_to_search:
+        if integrer == Number_to_search:
             print("Num encontrado")
             #Sirve para terminar el ciclo
             break
